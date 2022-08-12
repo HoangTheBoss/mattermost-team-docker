@@ -15,10 +15,7 @@ services:
       - /tmp
       - /var/run/postgresql
     volumes:
-      - ${POSTGRES_DATA_PATH}:/var/lib/postgresql/data
-    network_mode: host
-    ports:
-      - 5432:5432
+      - ${POSTGRES_DATA_PATH}:/var/lib/postgresql/data:z
     environment:
       # timezone inside container
       - TZ
