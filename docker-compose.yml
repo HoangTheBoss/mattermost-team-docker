@@ -16,10 +16,7 @@ services:
       - /var/run/postgresql
     volumes:
       - ${POSTGRES_DATA_PATH}:/var/lib/postgresql/data
-    networks:
-           default:
-                aliases:
-                   - postgres
+    network_mode: host
     ports:
       - 5432:5432
     environment:
