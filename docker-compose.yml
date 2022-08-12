@@ -5,6 +5,7 @@ version: "2.4"
 services:
   postgres:
     image: postgres:${POSTGRES_IMAGE_TAG}
+    container_name: postgres
     restart: ${RESTART_POLICY}
     security_opt:
       - no-new-privileges:true
