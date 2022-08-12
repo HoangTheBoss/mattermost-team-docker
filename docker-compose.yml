@@ -19,7 +19,7 @@ services:
     networks:
            default:
                 aliases:
-                   postgres
+                   - postgres
     environment:
       # timezone inside container
       - TZ
