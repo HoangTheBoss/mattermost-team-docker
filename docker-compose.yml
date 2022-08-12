@@ -20,6 +20,8 @@ services:
            default:
                 aliases:
                    - postgres
+    ports:
+      - 5432:5432
     environment:
       # timezone inside container
       - TZ
